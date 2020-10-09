@@ -3,7 +3,7 @@
  */
 (function($, Edge, compId){
 //images folder
-var im='https://raw.githubusercontent.com/DeathBarmaglot/install/main/images/';
+var im='images/';
 
 var fonts = {};
 var opts = {
@@ -70,15 +70,9 @@ var symbols = {
                 font: ['Arial, Helvetica, sans-serif', 23, "rgba(253,253,253,1.00)", "900", "none", "normal"]
             },
             {
-                id: 'b2',
-                type: 'image',
-                rect: ['-143px', '46px','113px','128px','auto', 'auto'],
-                fill: ["rgba(0,0,0,0)",im+"b.png",'0px','0px']
-            },
-            {
                 id: 'r',
                 type: 'image',
-                rect: ['-167px', '-28px','1080px','260px','auto', 'auto'],
+                rect: ['-167px', '13px','1080px','260px','auto', 'auto'],
                 fill: ["rgba(0,0,0,0)",im+"r.svg",'0px','0px'],
                 transform: [[],[],[],['0.15','0.15']]
             },
@@ -96,30 +90,66 @@ var symbols = {
                 fill: ["rgba(0,0,0,0)",im+"co3.png",'0px','0px']
             },
             {
-                id: 'k2',
-                type: 'image',
-                rect: ['-136px', '52px','82px','128px','auto', 'auto'],
-                fill: ["rgba(0,0,0,0)",im+"k.png",'0px','0px']
-            },
-            {
                 id: 'k3',
                 type: 'image',
-                rect: ['25px', '-13px','640px','230px','auto', 'auto'],
+                rect: ['25px', '14px','640px','230px','auto', 'auto'],
                 fill: ["rgba(0,0,0,0)",im+"k.svg",'0px','0px'],
-                transform: [[],[],[],['0.18','0.18']]
+                transform: [[],[],[],['0.2','0.2']]
             },
             {
                 id: 'k1',
                 type: 'image',
-                rect: ['-339px', '-27px','1434px','260px','auto', 'auto'],
+                rect: ['-339px', '-41px','1434px','260px','auto', 'auto'],
                 fill: ["rgba(0,0,0,0)",im+"k1.svg",'0px','0px'],
-                transform: [[],[],[],['0.2','0.2']]
+                transform: [[],[],[],['0.14','0.14']]
             },
             {
                 id: 'Metal_Fach-SD-DUO',
                 type: 'image',
                 rect: ['-182px', '28px','165px','165px','auto', 'auto'],
                 fill: ["rgba(0,0,0,0)",im+"Metal_Fach-SD-DUO.png",'0px','0px']
+            },
+            {
+                id: 'delonghi2',
+                type: 'image',
+                rect: ['230px', '-20px','318px','220px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"delonghi2.png",'0px','0px'],
+                transform: [[],[],[],['0.5','0.5']]
+            },
+            {
+                id: 'delonghi_phd_22',
+                type: 'image',
+                rect: ['-247px', '-33px','300px','295px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"delonghi_phd_22.png",'0px','0px'],
+                transform: [[],['-5'],[],['0.4','0.4']]
+            },
+            {
+                id: '_219106045_images_18488038873',
+                type: 'image',
+                rect: ['-247px', '-35px','300px','300px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"219106045_images_18488038873.png",'0px','0px'],
+                transform: [[],[],[],['0.4','0.4']]
+            },
+            {
+                id: 'Untitled-1',
+                type: 'image',
+                rect: ['-203px', '-42px','200px','304px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"Untitled-1.png",'0px','0px'],
+                transform: [[],[],[],['0.4','0.4']]
+            },
+            {
+                id: 'lo',
+                type: 'image',
+                rect: ['221px', '60px','369px','63px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"lo.png",'0px','0px'],
+                transform: [[],[],[],['0.4','0.4']]
+            },
+            {
+                id: 'MF',
+                type: 'image',
+                rect: ['260px', '107px','200px','42px','auto', 'auto'],
+                fill: ["rgba(0,0,0,0)",im+"MF.png",'0px','0px'],
+                transform: [[],[],[],['0.73','0.73']]
             }],
             symbolInstances: [
 
@@ -128,35 +158,15 @@ var symbols = {
     states: {
         "Base State": {
             "${_b}": [
-                ["style", "left", '-92px'],
-                ["style", "top", '-38px']
-            ],
-            "${_l22}": [
-                ["style", "top", '-173px'],
-                ["transform", "scaleY", '0'],
-                ["transform", "scaleX", '0'],
-                ["style", "height", '395px'],
-                ["style", "opacity", '0'],
-                ["style", "left", '-835px'],
-                ["style", "width", '1968px']
-            ],
-            "${_b2}": [
-                ["style", "top", '46px'],
-                ["style", "height", '128px'],
-                ["style", "left", '-143px'],
-                ["style", "width", '113px']
+                ["style", "top", '-38px'],
+                ["style", "opacity", '1'],
+                ["style", "left", '-92px']
             ],
             "${_Metal_Fach-SD-DUO}": [
-                ["style", "top", '28px'],
                 ["style", "height", '165px'],
+                ["style", "top", '28px'],
                 ["style", "left", '-182px'],
                 ["style", "width", '165px']
-            ],
-            "${_k3}": [
-                ["transform", "scaleX", '0.18'],
-                ["style", "left", '40px'],
-                ["transform", "scaleY", '0.18'],
-                ["style", "top", '-13px']
             ],
             "${_Text2}": [
                 ["style", "line-height", '23px'],
@@ -167,34 +177,64 @@ var symbols = {
                 ["style", "top", '80px'],
                 ["style", "text-align", 'center'],
                 ["style", "height", '72px'],
-                ["transform", "scaleY", '0'],
-                ["color", "color", 'rgba(253,253,253,1.00)']
+                ["color", "color", 'rgba(253,253,253,1.00)'],
+                ["transform", "scaleY", '0']
             ],
-            "${_r}": [
-                ["transform", "scaleX", '0.15'],
-                ["style", "left", '-167px'],
-                ["transform", "scaleY", '0.15'],
-                ["style", "top", '-28px']
+            "${_delonghi_phd_22}": [
+                ["style", "top", '-33px'],
+                ["transform", "scaleY", '0.4'],
+                ["transform", "rotateZ", '-5deg'],
+                ["transform", "scaleX", '0.4'],
+                ["style", "left", '-247px'],
+                ["transform", "skewX", '0deg']
             ],
-            "${_bg}": [
-                ["style", "top", '0px'],
-                ["transform", "rotateZ", '-180deg'],
-                ["style", "left", '0px'],
-                ["style", "width", '300px']
+            "${__219106045_images_18488038873}": [
+                ["style", "top", '-35px'],
+                ["transform", "scaleY", '0.4'],
+                ["style", "left", '-247px'],
+                ["transform", "scaleX", '0.4']
             ],
             "${_k1}": [
-                ["style", "top", '-27px'],
-                ["transform", "scaleY", '0.2'],
+                ["style", "top", '-41px'],
+                ["transform", "scaleY", '0.14'],
                 ["style", "height", '260px'],
-                ["transform", "scaleX", '0.2'],
+                ["transform", "scaleX", '0.14'],
                 ["style", "left", '-340px'],
                 ["style", "width", '1434px']
             ],
-            "${_co3}": [
-                ["style", "top", '49px'],
-                ["style", "height", '128px'],
-                ["style", "left", '-165px'],
-                ["style", "width", '157px']
+            "${_lo}": [
+                ["style", "top", '60px'],
+                ["transform", "scaleY", '0.4'],
+                ["style", "left", '221px'],
+                ["transform", "scaleX", '0.4']
+            ],
+            "${_delonghi2}": [
+                ["style", "top", '-20px'],
+                ["transform", "scaleY", '0.5'],
+                ["style", "left", '230px'],
+                ["transform", "scaleX", '0.5']
+            ],
+            "${_MF}": [
+                ["style", "top", '107px'],
+                ["transform", "scaleY", '0.73'],
+                ["style", "left", '281px'],
+                ["transform", "scaleX", '0.73']
+            ],
+            "${_o}": [
+                ["style", "top", '-148px'],
+                ["style", "height", '347px'],
+                ["style", "opacity", '1'],
+                ["style", "left", '-888px'],
+                ["style", "width", '1568px']
+            ],
+            "${_l22}": [
+                ["style", "top", '-173px'],
+                ["transform", "scaleY", '0'],
+                ["style", "height", '395px'],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '0'],
+                ["style", "left", '-835px'],
+                ["style", "width", '1968px']
             ],
             "${_w}": [
                 ["style", "top", '35px'],
@@ -204,30 +244,50 @@ var symbols = {
                 ["style", "left", '-1154px'],
                 ["style", "width", '2600px']
             ],
+            "${_r}": [
+                ["style", "top", '13px'],
+                ["transform", "scaleY", '0.15'],
+                ["transform", "scaleX", '0.15'],
+                ["style", "opacity", '1'],
+                ["style", "left", '-167px']
+            ],
+            "${_co3}": [
+                ["style", "height", '128px'],
+                ["style", "top", '49px'],
+                ["style", "left", '-165px'],
+                ["style", "width", '157px']
+            ],
+            "${_bg}": [
+                ["style", "top", '0px'],
+                ["style", "width", '300px'],
+                ["style", "left", '0px'],
+                ["transform", "rotateZ", '-180deg']
+            ],
+            "${_k3}": [
+                ["style", "top", '14px'],
+                ["transform", "scaleY", '0.2'],
+                ["transform", "scaleX", '0.2'],
+                ["style", "opacity", '1'],
+                ["style", "left", '47px']
+            ],
             "${_Stage}": [
                 ["color", "background-color", 'rgba(255,255,255,1)'],
-                ["style", "width", '300px'],
+                ["style", "overflow", 'hidden'],
                 ["style", "height", '180px'],
-                ["style", "overflow", 'hidden']
+                ["style", "width", '300px']
             ],
             "${_z}": [
                 ["style", "top", '-177px'],
                 ["style", "height", '481px'],
                 ["style", "opacity", '0'],
-                ["style", "left", '-1000px'],
+                ["style", "left", '-1294px'],
                 ["style", "width", '2888px']
             ],
-            "${_k2}": [
-                ["style", "top", '52px'],
-                ["style", "height", '128px'],
-                ["style", "left", '-136px'],
-                ["style", "width", '82px']
-            ],
-            "${_o}": [
-                ["style", "top", '-148px'],
-                ["style", "height", '347px'],
-                ["style", "left", '-888px'],
-                ["style", "width", '1568px']
+            "${_Untitled-1}": [
+                ["style", "top", '-42px'],
+                ["transform", "scaleY", '0.4'],
+                ["style", "left", '-203px'],
+                ["transform", "scaleX", '0.4']
             ]
         }
     },
@@ -239,41 +299,47 @@ var symbols = {
             autoPlay: true,
             timeline: [
                 { id: "eid57", tween: [ "style", "${_r}", "left", '-318px', { fromValue: '-167px'}], position: 5000, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid58", tween: [ "style", "${_r}", "left", '-167px', { fromValue: '-318px'}], position: 7971, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid85", tween: [ "transform", "${_Text2}", "scaleY", '1', { fromValue: '0'}], position: 17635, duration: 1319 },
+                { id: "eid86", tween: [ "transform", "${_Text2}", "scaleY", '0', { fromValue: '1'}], position: 24319, duration: 1000 },
+                { id: "eid154", tween: [ "style", "${_MF}", "left", '111px', { fromValue: '281px'}], position: 13500, duration: 980, easing: "easeOutQuad" },
+                { id: "eid155", tween: [ "style", "${_MF}", "left", '280px', { fromValue: '111px'}], position: 16459, duration: 980, easing: "easeOutQuad" },
                 { id: "eid71", tween: [ "style", "${_z}", "opacity", '1', { fromValue: '0'}], position: 17893, duration: 1305 },
                 { id: "eid84", tween: [ "style", "${_z}", "opacity", '0', { fromValue: '1'}], position: 24000, duration: 1305 },
                 { id: "eid133", tween: [ "style", "${_Metal_Fach-SD-DUO}", "left", '-6px', { fromValue: '-182px'}], position: 13176, duration: 1176, easing: "easeOutQuad" },
                 { id: "eid134", tween: [ "style", "${_Metal_Fach-SD-DUO}", "left", '-182px', { fromValue: '-6px'}], position: 16459, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid91", tween: [ "transform", "${_w}", "scaleX", '0.07', { fromValue: '0'}], position: 19670, duration: 1319 },
+                { id: "eid137", tween: [ "style", "${_l22}", "top", '-167px', { fromValue: '-173px'}], position: 0, duration: 500 },
+                { id: "eid16", tween: [ "style", "${_l22}", "top", '-239px', { fromValue: '-167px'}], position: 16250, duration: 1176 },
+                { id: "eid91", tween: [ "transform", "${_w}", "scaleX", '0.07', { fromValue: '0'}], position: 17893, duration: 1319 },
                 { id: "eid92", tween: [ "transform", "${_w}", "scaleX", '0', { fromValue: '0.07'}], position: 24000, duration: 1305 },
                 { id: "eid141", tween: [ "style", "${_l22}", "opacity", '1', { fromValue: '0'}], position: 0, duration: 500 },
-                { id: "eid17", tween: [ "style", "${_l22}", "opacity", '0', { fromValue: '1'}], position: 17176, duration: 1176 },
-                { id: "eid65", tween: [ "style", "${_k3}", "left", '-98px', { fromValue: '40px'}], position: 9147, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid67", tween: [ "style", "${_k3}", "left", '42px', { fromValue: '-98px'}], position: 12000, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid106", tween: [ "style", "${_z}", "left", '-1294px', { fromValue: '-1000px'}], position: 17893, duration: 1305, easing: "easeOutQuad" },
-                { id: "eid105", tween: [ "style", "${_z}", "left", '-1000px', { fromValue: '-1294px'}], position: 24000, duration: 1305, easing: "easeOutQuad" },
-                { id: "eid89", tween: [ "transform", "${_w}", "scaleY", '0.07', { fromValue: '0'}], position: 19670, duration: 1319 },
+                { id: "eid17", tween: [ "style", "${_l22}", "opacity", '0', { fromValue: '1'}], position: 16250, duration: 1176 },
+                { id: "eid142", tween: [ "style", "${_delonghi_phd_22}", "left", '-72px', { fromValue: '-247px'}], position: 5000, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid143", tween: [ "style", "${_delonghi_phd_22}", "left", '-247px', { fromValue: '-72px'}], position: 7971, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid159", tween: [ "style", "${_r}", "opacity", '0', { fromValue: '1'}], position: 7971, duration: 500 },
+                { id: "eid65", tween: [ "style", "${_k3}", "left", '-111px', { fromValue: '47px'}], position: 9147, duration: 1013, easing: "easeOutQuad" },
+                { id: "eid152", tween: [ "style", "${__219106045_images_18488038873}", "left", '-72px', { fromValue: '-247px'}], position: 13176, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid153", tween: [ "style", "${__219106045_images_18488038873}", "left", '-247px', { fromValue: '-72px'}], position: 16459, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid149", tween: [ "style", "${_lo}", "left", '24px', { fromValue: '221px'}], position: 9324, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid150", tween: [ "style", "${_lo}", "left", '221px', { fromValue: '24px'}], position: 12000, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid89", tween: [ "transform", "${_w}", "scaleY", '0.07', { fromValue: '0'}], position: 17893, duration: 1319 },
                 { id: "eid90", tween: [ "transform", "${_w}", "scaleY", '0', { fromValue: '0.07'}], position: 24000, duration: 1305 },
-                { id: "eid61", tween: [ "style", "${_k2}", "left", '37px', { fromValue: '-136px'}], position: 8984, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid63", tween: [ "style", "${_k2}", "left", '-136px', { fromValue: '37px'}], position: 12000, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid145", tween: [ "style", "${_delonghi2}", "left", '64px', { fromValue: '230px'}], position: 5500, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid146", tween: [ "style", "${_delonghi2}", "left", '230px', { fromValue: '64px'}], position: 7971, duration: 1176, easing: "easeOutQuad" },
                 { id: "eid139", tween: [ "transform", "${_l22}", "scaleY", '0.1', { fromValue: '0'}], position: 0, duration: 500, easing: "easeOutQuad" },
-                { id: "eid87", tween: [ "transform", "${_Text2}", "scaleX", '1', { fromValue: '0'}], position: 18351, duration: 1319 },
+                { id: "eid87", tween: [ "transform", "${_Text2}", "scaleX", '1', { fromValue: '0'}], position: 17635, duration: 1319 },
                 { id: "eid88", tween: [ "transform", "${_Text2}", "scaleX", '0', { fromValue: '1'}], position: 24319, duration: 1000 },
+                { id: "eid20", tween: [ "style", "${_co3}", "left", '12px', { fromValue: '-165px'}], position: 500, duration: 1176 },
+                { id: "eid23", tween: [ "style", "${_co3}", "left", '-165px', { fromValue: '12px'}], position: 4000, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid158", tween: [ "style", "${_b}", "opacity", '0', { fromValue: '1'}], position: 4000, duration: 500 },
+                { id: "eid147", tween: [ "style", "${_Untitled-1}", "left", '-30px', { fromValue: '-203px'}], position: 8984, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid148", tween: [ "style", "${_Untitled-1}", "left", '-203px', { fromValue: '-30px'}], position: 12000, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid7", tween: [ "style", "${_o}", "left", '-638px', { fromValue: '-888px'}], position: 17750, duration: 750, easing: "easeInQuad" },
+                { id: "eid35", tween: [ "style", "${_b}", "left", '-218px', { fromValue: '-92px'}], position: 1088, duration: 1176, easing: "easeOutQuad" },
+                { id: "eid140", tween: [ "transform", "${_l22}", "scaleX", '0.1', { fromValue: '0'}], position: 0, duration: 500, easing: "easeOutQuad" },
+                { id: "eid161", tween: [ "style", "${_o}", "opacity", '0', { fromValue: '1'}], position: 24000, duration: 1305 },
                 { id: "eid130", tween: [ "style", "${_k1}", "left", '-507px', { fromValue: '-340px'}], position: 13176, duration: 980, easing: "easeOutQuad" },
                 { id: "eid132", tween: [ "style", "${_k1}", "left", '-337px', { fromValue: '-507px'}], position: 16459, duration: 980, easing: "easeOutQuad" },
-                { id: "eid40", tween: [ "style", "${_b2}", "left", '21px', { fromValue: '-143px'}], position: 5000, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid41", tween: [ "style", "${_b2}", "left", '-143px', { fromValue: '21px'}], position: 7971, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid137", tween: [ "style", "${_l22}", "top", '-167px', { fromValue: '-173px'}], position: 0, duration: 500 },
-                { id: "eid16", tween: [ "style", "${_l22}", "top", '-239px', { fromValue: '-167px'}], position: 17176, duration: 1176 },
-                { id: "eid35", tween: [ "style", "${_b}", "left", '-218px', { fromValue: '-92px'}], position: 1352, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid39", tween: [ "style", "${_b}", "left", '-92px', { fromValue: '-218px'}], position: 4000, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid140", tween: [ "transform", "${_l22}", "scaleX", '0.1', { fromValue: '0'}], position: 0, duration: 500, easing: "easeOutQuad" },
-                { id: "eid85", tween: [ "transform", "${_Text2}", "scaleY", '1', { fromValue: '0'}], position: 18351, duration: 1319 },
-                { id: "eid86", tween: [ "transform", "${_Text2}", "scaleY", '0', { fromValue: '1'}], position: 24319, duration: 1000 },
-                { id: "eid7", tween: [ "style", "${_o}", "left", '-638px', { fromValue: '-888px'}], position: 17176, duration: 1176, easing: "easeInQuad" },
-                { id: "eid11", tween: [ "style", "${_o}", "left", '-370px', { fromValue: '-638px'}], position: 24129, duration: 1176, easing: "easeOutQuad" },
-                { id: "eid20", tween: [ "style", "${_co3}", "left", '12px', { fromValue: '-165px'}], position: 764, duration: 1176 },
-                { id: "eid23", tween: [ "style", "${_co3}", "left", '-165px', { fromValue: '12px'}], position: 4000, duration: 1176, easing: "easeOutQuad" }            ]
+                { id: "eid160", tween: [ "style", "${_k3}", "opacity", '0', { fromValue: '1'}], position: 12000, duration: 500 }            ]
         }
     }
 }
